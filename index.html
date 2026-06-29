@@ -1,58 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CardSinalArt</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            overflow: hidden;
-        }
+body{
+    margin: 0;
+    background: #ffffff;
+    min-height: 100vh;
+    
+}
+
+.container-cards {
+    display: flex;
+    border: 4px solid purple;
+    flex-wrap: wrap; 
+    gap: 16px;       
+    justify-content: center; 
+    max-width: 1080px; 
+    margin: 40px auto;
+}
+
+.card{
+    width: 220px;
+    background: #0000ff;
+    border: 2px solid rgba(0, 0, 0, 0.856);
+    padding: 17px;
+}
+
+.foto{
+    border: 2px solid rgb(255, 255, 255);
+    height: 200px;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dados{
+    /* border: 4px solid yellow; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    display: flex;
+        /* justify-content: center; */
+    color: white;
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.infos a{
+    color: cornflowerblue;
+    /* border: 4px solid orange; */
+    font-size: 10px;
+}
+.infos a:hover{
+    transform: scale(1.2);
+}
+
+.infos img{
+    /* border: 4px solid rgb(18, 138, 36); */
+    margin-top: 15px;
+    width: 30px;
+}
     </style>
 </head>
 <body>
-    
-    <div class="card">
+    <!-- Glossario -->
+    <div class="container-cards">
+        <div class="card">
+            <div class="foto">
+                <img src="img/Fatima Xavier.jpg" alt="sceptile">
+            </div>
 
-        <div class="foto">
-            <img src="img/Fatima Xavier.jpg" alt="sceptile">
+            <div class="dados">Maria Fátima Xavier Cruz Andrade</div>
+
+            <div class="infos">
+
+                <a href="https://www.instagram.com/fatima.x.andrade/" target="_blank">
+                    <img src="img/icon_insta.png" alt="icon_insta">
+                </a>
+                
+                <a href="">
+                    <img src="img/icon_lattes.png" alt="icon_lattes">
+                </a>
+            </div>
+
         </div>
 
-        <div class="dados">Maria Fátima Xavier Cruz Andrade</div>
+        <div class="card">
+            <div class="foto">
+                <img src="img/Ingrid Ribeiro.jpeg" alt="FotoExtensionista">
+            </div>
 
-        <div class="infos">
+            <div class="dados">Ingrid Ribeiro Braga Barbosa</div>
 
-            <a href="https://www.instagram.com/fatima.x.andrade/" target="_blank">
-                <img src="img/icon_insta.png" alt="icon_insta">
-            </a>
-            
-            <a href="">
-                <img src="img/icon_lattes.png" alt="icon_lattes">
-            </a>
+            <div class="infos">
+
+                <a href="https://www.instagram.com/fatima.x.andrade/" target="_blank">
+                    <img src="img/icon_insta.png" alt="icon_insta">
+                </a>
+                
+                <a href="">
+                    <img src="img/icon_lattes.png" alt="icon_lattes">
+                </a>
+            </div>
         </div>
 
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="sceptile">
+            </div>
+
+            <div class="dados">Carla Rosângela Silva de Almeida</div>
+
+            <div class="infos">
+
+                <a href="https://www.instagram.com/carla_rosangela_/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/Ingrid%20Ribeiro.jpeg?raw=true"sceptile">
+            </div>
+
+            <div class="dados">MILENA QUATTRER</div>
+
+            <div class="infos">
+
+                <a href="https://www.instagram.com/color_education/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="https://lattes.cnpq.br/6358822866393449">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Bruna Barros Gomes da Silva</div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/sakurabarros/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Miguel Oliveira de Carvalho</div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/michuoliver/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="http://lattes.cnpq.br/5483520698579953">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Esther de Freitas Vianna </div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/estherviannafreitas/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Julieny Melo Costa </div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/julieny_melo/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Viviane Ferreira da Silva</div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/viviane.fdsrj/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Adriana Navega Barcellos </div>
+
+            <div class="infos">
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Maria Clara Cylindro Machado </div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/clariith.machadinha/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Welton Fernando Zonatti</div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/modateca.ines/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="http://lattes.cnpq.br/2289209834440375" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Deuzeland Favaro Diniz </div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/deuzeland/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Monica Colodina Hortencio</div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/monicacolodina/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="foto">
+                <img src="" alt="fotoExtensionista">
+            </div>
+
+            <div class="dados">Daniel Santana Souza</div>
+
+            <div class="infos">
+                <a href="https://www.instagram.com/kena_jazz/" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_insta.png?raw=true" alt="icon_insta">
+                </a>
+                
+                <a href="" target="_blank">
+                    <img src="https://github.com/CarlosEduardoSilverio/Equipe_SinalArt/blob/main/img/icon_lattes.png?raw=true" alt="icon_lattes">
+                </a>
+            </div>
+        </div>
     </div>
-
-    <!-- <div class="card">
-
-        <div class="foto">
-            <img src="img/Ingrid Ribeiro.jpeg" alt="FotoExtensionista">
-        </div>
-
-        <div class="dados">Ingrid Ribeiro Braga Barbosa</div>
-
-        <div class="infos">
-
-            <a href="https://www.instagram.com/fatima.x.andrade/" target="_blank">
-                <img src="img/icon_insta.png" alt="icon_insta">
-            </a>
-            
-            <a href="">
-                <img src="img/icon_lattes.png" alt="icon_lattes">
-            </a>
-        </div>
-
-    </div> -->
 </body>
 </html>
